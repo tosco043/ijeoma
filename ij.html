@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment</title>
+    <style>
+         body{
+            background: rgb(19, 128, 122);
+            margin: 0;
+            padding: 0;
+            color: var(--secondary-colour);
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+         }
+         header{
+            background:rgb(230, 20, 167);
+            padding: 50px;
+         }
+         section{
+            background: rgb(47, 231, 255);
+            padding: 30px;
+            
+         }
+         footer{
+              background: rgb(235, 252, 0);
+              color: rgb(66, 0, 0);
+              padding: 20px;
+              text-align: center;
+              
+              
+
+         }
+         nav ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            color: rgb(42, 151, 165);
+            font-size: larger;
+         }
+         ul li{
+            display: inline-block;
+            margin-right: 20px ;
+            
+         }
+         aside ol{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            font-size: larger;
+            color: blueviolet;
+         }
+         aside h3{
+            color: brown;
+         }
+         ol li{
+            margin-bottom: 20px;
+         }
+         h1{
+            color: goldenrod;
+            text-align: center;
+         }
+         aside{
+            background: lawngreen;
+            padding: 30px;
+            margin-top: 0px;
+            float: left;
+            
+         }
+         article{
+            margin-left: 0;
+            text-align: center;
+         }
+         article h3{
+            color: red;
+         }
+         #icon{
+            width: 30px;
+            cursor: pointer;
+         }
+        :root{
+            --primary-colour: #edf2fc;
+            --secondary-colour: #212121;
+        }
+         .dark-theme{
+            --primary-colour: #000106;
+            --secondary-colour: #fff; 
+         }
+    </style>
+</head>
+<body>
+    <header>
+      <nav> 
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Contact</a></li> 
+       </ul>
+       <img src="moon.png" id="icon">
+    </nav>
+        <h1><b>IJ CATERING SERVICES</b></h1>
+    </header>
+    <section>
+        <aside id="sidebar">
+            <h3> Services </h3>
+            
+            <ol>
+                <li><a href="#">Wedding</a></li>
+                <li><a href="#">Burial</a></li>
+                <li><a href="#">Birthday Party</a></li>
+            </ol>
+            </aside>
+        <article id="content">
+    <h3><b>WELCOME TO IJ CATERING SERVICES </b></h3>
+    <img src="https://i.onthe.io/smngoz1heifg464t08.31773f03.jpg" alt="Catering Services">
+    <p>
+      We pride ourselves  on offering the best catering services in Lagos by creating unique menus to accommodate every special event. From casual in-home brunches and office lunches to elegant weddings and glamorous events, our catering services are perfect for any size, any style, and are customized to your budget.
+    </p>
+    <p>
+        We offer services at cheap and affordable prices for you and your household.<br>We also give awesome discounts to both new and old customers.
+    </p>
+    </article>
+   
+        <footer>
+            <p>
+                IJ Catering Central Address:- Enugu,Nigeria. Postal code:- 400104
+            </p>
+        </footer>
+</section>
+<script>
+ var icon = document.getElementById("icon");
+icon.onclick = function(){
+    document.body.classList.toggle("dark-theme"); 
+    if(document.body.classList.contains("dark-theme")){
+        icon.src = "sun.png";
+    }else{
+        icon.src = "moon.png";
+    }
+} 
+</script>
+</body>
+</html>
